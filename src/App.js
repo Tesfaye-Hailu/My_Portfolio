@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
 } from "react-router-dom";
 
@@ -18,7 +18,7 @@ function App() {
         <HeaderMenu />
         
         <div className="content-area p-5">
-          <Routes>
+          <Switch>
             {
               routes.map((route, index) => (
                 <Route
@@ -28,7 +28,7 @@ function App() {
                 />
               ))
             }
-          </Routes>
+          </Switch>
         </div>
 
         {/* <h2 className="name">Welcome to React JS</h2> */}
